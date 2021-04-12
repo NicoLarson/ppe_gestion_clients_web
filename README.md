@@ -16,7 +16,7 @@ Afficher un warning dans le cas l’administrateur ne renseigne pas un champ.
 
 ![Créer un utilisateur]()
 ## BDD
-La base de données vous sera nommée « client_ligue » la table la nommer « clients » et doit contenir : Id_client : int, nom : varchar, prenom : varchar, age : int, email : varchar.
+La base de données vous sera nommée « client_ligue » la table la nommer « clients » et doit contenir : id_client : int, nom : varchar, prenom : varchar, age : int, email : varchar.
 Coté publication vous devez afficher l’identifiant, le nom, prénom, age et email.
 N’oubliez pas d’ajouter, des liens à côté « modifier ou supprimer ».
 
