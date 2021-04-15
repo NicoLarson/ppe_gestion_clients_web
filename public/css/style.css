@@ -5,7 +5,7 @@
   --color-green-light: rgba(0, 97, 78, 0.08);
   --color-red: #d63031;
   --color-black: #222;
-  --color-white: #fafafa;
+  --color-white: #fff;
   --color-grey: rgba(0, 0, 0, 0.1);
 }
 
@@ -60,12 +60,18 @@ main > a {
   background-color: var(--color-blue);
   color: var(--color-white);
 }
-
 main form {
   display: flex;
   flex-direction: column;
-  padding: 2rem 1rem;
-  border: var(--color-green) 0.2rem solid;
+  padding: 4rem 2rem;
+  background: linear-gradient(var(--color-green) 0 0) 0 100%,
+    linear-gradient(var(--color-green) 0 0) 0 100%,
+    linear-gradient(var(--color-green) 0 0) 100% 0,
+    linear-gradient(var(--color-green) 0 0) 100% 0;
+  background-size: 6rem 0.3rem, 0.3rem 6rem;
+  background-repeat: no-repeat;
+  background-position: 100% 100%, 0 0, 0 0, 100% 100%;
+  background-color: var(--color-white);
 }
 
 main form a {
@@ -74,42 +80,77 @@ main form a {
   font-weight: 400;
   color: var(--color-green);
 }
-
+main form a:focus {
+  text-decoration: underline;
+}
+main form a i {
+  padding: 0 0 0 0.6rem;
+  font-size: 1.2rem;
+}
+main form p.warning {
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  background-color: var(--color-red);
+  color: var(--color-white);
+}
 main form label {
   padding-top: 2rem;
   font-size: 2rem;
 }
-
 main form input {
+  max-width: 50%;
   padding: 0.4rem 0 0.4rem 1rem;
-  border: 0;
+  border: var(--color-white) 0.1rem solid;
   border-bottom: 0.1rem solid var(--color-grey);
   font-size: 2rem;
+  transition: 0.4s;
 }
 main form input:focus {
+  max-width: 100%;
   border: var(--color-black) 0.1rem solid;
 }
-main form input[type="submit"] {
+main form button[type="submit"] {
   width: 22rem;
   margin: 2rem auto 0 0;
-  padding: 1rem 2rem;
+  padding: .4rem 2rem 1rem;
   border: 0;
   background-color: var(--color-green);
   color: var(--color-white);
+  font-size: 2rem;
   font-weight: 500;
   cursor: pointer;
+  transition: 0.2s;
 }
-main button {
+main form button[type="submit"] svg{
+  position: relative;
+  top: .4rem;
+}
+main p {
+  margin-top: 4rem;
+  padding: 6rem 2rem;
+  border-top: var(--color-grey) 0.2rem solid;
+  border-bottom: var(--color-grey) 0.2rem solid;
+}
+
+main p a.delete {
+  display: block;
   width: 22rem;
-  margin: 2rem 0 1rem 1rem;
   padding: 1rem 2rem;
-  border: 0;
   background-color: var(--color-red);
   color: var(--color-white);
   font-size: 2rem;
   font-weight: 500;
+  text-align: center;
   cursor: pointer;
+  transition: 0.2s;
 }
+main p a.delete:focus,
+main form input[type="submit"]:focus {
+  transform: scale(0.9);
+}
+
 /* Footer */
 footer p {
   padding: 1rem;

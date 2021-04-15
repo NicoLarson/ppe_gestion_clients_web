@@ -1,6 +1,6 @@
 <?php
 
-require ('../src/Controller/frontend.php');
+require('../src/Controller/frontend.php');
 
 
 if (isset($_GET['action'])) {
@@ -8,6 +8,8 @@ if (isset($_GET['action'])) {
         addUser();
     } elseif ($_GET['action'] == 'updateUser') {
         updateUser();
+    } elseif ($_GET['action'] == 'removeUser') {
+        removeUser();
     }
 } else {
     listUser();
