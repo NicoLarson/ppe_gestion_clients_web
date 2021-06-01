@@ -3,7 +3,7 @@
 Cette partie de site admin a pour but de permettre aux administrateurs des Maisons des ligues, de recenser leurs clients. 
 Pour ce faire, il faut créer une interface admin qui permet d’ajouter un client, modifier sont profile ou le supprimer
 
-![Ajouter un client]()
+![Ajouter un client](https://raw.githubusercontent.com/NicoLarson/ppe_gestion_clients_web/main/public/asset/img/Ajouter_un_client.png)
 
 Les structures html des pages doit respecter les normes w3c. 
 Les pages doivent être accessibles et s’adapter à tous les écrans. 
@@ -14,13 +14,13 @@ Les fichiers doivent porter l’extension « .php » et ils doivent être interp
 Vous devez créer toute la partie gestion. Pour les enregistrements à publier il faut créer une page avec un formulaire de 4 champs : Nom, Prénom, Age et adresse mail. Tous les champs sont obligatoires. 
 Afficher un warning dans le cas l’administrateur ne renseigne pas un champ.
 
-![Créer un utilisateur]()
+![Créer un utilisateur](https://raw.githubusercontent.com/NicoLarson/ppe_gestion_clients_web/main/public/asset/img/Cr%C3%A9er_un_utilisateur.png)
 ## BDD
 La base de données vous sera nommée « client_ligue » la table la nommer « clients » et doit contenir : id_client : int, nom : varchar, prenom : varchar, age : int, email : varchar.
 Coté publication vous devez afficher l’identifiant, le nom, prénom, age et email.
 N’oubliez pas d’ajouter, des liens à côté « modifier ou supprimer ».
 
-![Mettre à jour un client]()
+![Mettre à jour un client](https://raw.githubusercontent.com/NicoLarson/ppe_gestion_clients_web/main/public/asset/img/Mettre_a_jour_un_client.png)
 ## Aspect technique
 
 1. Les technologies autorisées sont : html5 css3 et php orienté objet.
