@@ -1,16 +1,17 @@
 <?php
 
-require('../src/Controller/frontend.php');
+require '../src/Controller/UserManagerController.php';
 
+$controller = new UserManagerController();
 
 if (isset($_GET['action'])) {
-    if ($_GET['action'] == 'addUser') {
-        addUser();
-    } elseif ($_GET['action'] == 'updateUser') {
-        updateUser();
-    } elseif ($_GET['action'] == 'removeUser') {
-        removeUser();
+    if ($_GET['action'] == 'add') {
+        $controller->addUser();
+    } elseif ($_GET['action'] == 'delete') {
+        $controller->deleteUser();
+    } elseif ($_GET['action'] == 'update') {
+        $controller->updateUser();
     }
 } else {
-    listUser();
+    $controller->displayUsers();
 }

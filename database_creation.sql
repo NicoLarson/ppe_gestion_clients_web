@@ -1,5 +1,5 @@
-CREATE DATABASE client_ligue;
-CREATE TABLE client_ligue.clients 
+CREATE DATABASE IF NOT EXISTS client_ligue;
+CREATE TABLE IF NOT EXISTS client_ligue.clients 
 (
     id_client INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     nom VARCHAR(255) NOT NULL,

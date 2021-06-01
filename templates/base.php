@@ -16,6 +16,7 @@
 <body>
     <header>
         <h1>&#9881; Maison des ligues: Interface admin</h1>
+        <?= $this->alert ?>
     </header>
     <main>
         <?= $content ?>
