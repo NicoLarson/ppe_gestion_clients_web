@@ -2,9 +2,8 @@
 ob_start();
 ?>
 
-<form action="#" method="POST">
+<form action="index.php?action=add" method="POST">
     <a href="index.php">Voir la liste des utilisateurs></a>
-    <?= $addUser->addUser() ?>
     <label for="name">Nom:</label>
     <input type="text" name="name" id="name" autofocus>
     <label for="first-name">Prénom:</label>
